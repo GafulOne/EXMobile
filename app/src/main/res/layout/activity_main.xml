@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="35dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pokeball" />
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="216dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/pokedex"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="327dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="72dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="327dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/edittext"
+            android:gravity="center"
+            android:hint="Search"
+            android:textColorHint="@color/medium"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="590dp"
+        android:layout_marginTop="140dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/edittext">
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="370dp"
+            android:layout_height="120dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bulbasaur_panel"
+                android:background="@color/white"
+                android:layout_width="110dp"
+                android:layout_height="120dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75dp"
+                    android:text="#001">
+                </TextView>
+
+                <ImageView
+                    android:background="@android:color/transparent"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/bulbasaur"
+                    android:layout_width="match_parent"
+                    android:layout_height="99dp"
+                    app:srcCompat="@drawable/bulbasaur" />
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_width="79dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Bulbasaur">
+                </TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/charmander_panel"
+                android:layout_marginLeft="15dp"
+                android:background="@color/white"
+                android:layout_width="110dp"
+                android:layout_height="120dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75dp"
+                    android:text="#004">
+                </TextView>
+
+                <ImageView
+                    android:background="@android:color/transparent"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/charmander"
+                    android:layout_width="match_parent"
+                    android:layout_height="99dp"
+                    app:srcCompat="@drawable/charmander" />
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_width="79dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Charmander">
+                </TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/squirtle_panel"
+                android:layout_marginLeft="15dp"
+                android:background="@color/white"
+                android:layout_width="110dp"
+                android:layout_height="120dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75dp"
+                    android:text="#007">
+                </TextView>
+
+                <ImageView
+                    android:background="@android:color/transparent"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/squirtle"
+                    android:layout_width="match_parent"
+                    android:layout_height="99dp"
+                    app:srcCompat="@drawable/squirtle" />
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_width="79dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Squirtle">
+                </TextView>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="370dp"
+            android:layout_height="120dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/butterfree_panel"
+                android:background="@color/white"
+                android:layout_width="110dp"
+                android:layout_height="120dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75dp"
+                    android:text="#012">
+                </TextView>
+
+                <ImageView
+                    android:background="@android:color/transparent"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/butterfree"
+                    android:layout_width="match_parent"
+                    android:layout_height="99dp"
+                    app:srcCompat="@drawable/butterfree" />
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_width="79dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Butterfree">
+                </TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/pikachu_panel"
+                android:layout_marginLeft="15dp"
+                android:background="@color/white"
+                android:layout_width="110dp"
+                android:layout_height="120dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75dp"
+                    android:text="#025">
+                </TextView>
+
+                <ImageView
+                    android:background="@android:color/transparent"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/pikachu"
+                    android:layout_width="match_parent"
+                    android:layout_height="99dp"
+                    app:srcCompat="@drawable/pikachu" />
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_width="79dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Pikachu">
+                </TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/gastly_panel"
+                android:layout_marginLeft="15dp"
+                android:background="@color/white"
+                android:layout_width="110dp"
+                android:layout_height="120dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75dp"
+                    android:text="#092">
+                </TextView>
+
+                <ImageView
+                    android:background="@android:color/transparent"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/gastly"
+                    android:layout_width="match_parent"
+                    android:layout_height="99dp"
+                    app:srcCompat="@drawable/gastly" />
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_width="79dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Gastly">
+                </TextView>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="370dp"
+            android:layout_height="120dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ditto_panel"
+                android:background="@color/white"
+                android:layout_width="110dp"
+                android:layout_height="120dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75dp"
+                    android:text="#132">
+                </TextView>
+
+                <ImageView
+                    android:background="@android:color/transparent"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/ditto"
+                    android:layout_width="match_parent"
+                    android:layout_height="99dp"
+                    app:srcCompat="@drawable/ditto" />
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_width="79dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Ditto">
+                </TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mew_panel"
+                android:layout_marginLeft="15dp"
+                android:background="@color/white"
+                android:layout_width="110dp"
+                android:layout_height="120dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75dp"
+                    android:text="#152">
+                </TextView>
+
+                <ImageView
+                    android:background="@android:color/transparent"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/mew"
+                    android:layout_width="match_parent"
+                    android:layout_height="99dp"
+                    app:srcCompat="@drawable/mew" />
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_width="79dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Mew">
+                </TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/aron_panel"
+                android:layout_marginLeft="15dp"
+                android:background="@color/white"
+                android:layout_width="110dp"
+                android:layout_height="120dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75dp"
+                    android:text="#304">
+                </TextView>
+
+                <ImageView
+                    android:background="@android:color/transparent"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/aron"
+                    android:layout_width="match_parent"
+                    android:layout_height="99dp"
+                    app:srcCompat="@drawable/aron" />
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_width="79dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Aron">
+                </TextView>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="370dp"
+            android:layout_height="120dp">
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/filtre"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="72dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sort_button"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
